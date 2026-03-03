@@ -1,51 +1,59 @@
 {
-  "elabftw": {
-    "extra_fields_groups": [
-      {
-        "id": 3,
-        "name": "GENERAL_sample"
-      }
-    ]
-  },
-  "extra_fields": {
-    "pathology": {
-      "type": "text",
-      "value": "",
-      "group_id": 3,
-      "position": 4,
-      "description": "Describes the pathology of the sample or the type of control. Necessary if different from healthy."
+    "elabftw": {
+	"extra_fields_groups": [
+	    {
+		"id": 1,
+		"name": "GENERAL_sample"
+	    }
+	]
     },
-    "sample_id": {
-      "type": "text",
-      "value": "",
-      "group_id": 3,
-      "position": 1,
-      "description": "The sample ID (slice, cell etc.) from which the data is acquired, for naming files. ONLY numbers, letters and +. Ex: 'slice01', 'cell+03'"
-    },
-    "sample_type": {
-      "type": "select",
-      "value": "",
-      "options": [
-        "cell line",
-        "in vitro differentiated cells",
-        "primary cell",
-        "cell-free sample",
-        "cloning host",
-        "tissue",
-        "whole organisms",
-        "organoid",
-        "technical sample"
-      ],
-      "group_id": 3,
-      "position": 3,
-      "description": "Biosample type (as defined by ENCODE Biosample Type)."
-    },
-    "derived_from": {
-      "type": "text",
-      "value": "",
-      "group_id": 3,
-      "position": 5,
-      "description": "The sample ID from which the present sample is derived from. Ex: if you record a cell that comes from a slice labeled 'slice01', indicate 'slice01' here!"
+    "extra_fields": {
+	"sample_id": {
+	    "type": "text",
+	    "value": "",
+	    "group_id": 1,
+	    "position": 1,
+	    "description": "The sample ID (slice, cell etc.) from which the data is acquired, for naming files. ONLY numbers, letters and +. Ex: 'slice01', 'cell+03'"
+	},
+	"sample_type": {
+	    "type": "select",
+	    "value": "",
+	    "options": [
+		"cell line",
+		"in vitro differentiated cells",
+		"primary cell",
+		"cell-free sample",
+		"cloning host",
+		"tissue",
+		"whole organisms",
+		"organoid",
+		"technical sample"
+	    ],
+	    "group_id": 1,
+	    "position": 2,
+	    "description": "Biosample type (as defined by ENCODE Biosample Type)."
+	},
+	"pathology": {
+	    "type": "text",
+	    "value": "",
+	    "group_id": 1,
+	    "position": 3,
+	    "description": "Describes the pathology of the sample or the type of control. Necessary if different from healthy."
+	},
+	"derived_from": {
+	    "type": "text",
+	    "value": "",
+	    "group_id": 1,
+	    "position": 4,
+	    "description": "The sample ID from which the present sample is derived from. Ex: if you record a cell that comes from a slice labeled 'slice01', indicate 'slice01' here!"
+	},
+	"samples_datafile_path": {
+	    "type": "text",
+	    "value": "",
+	    "description": "Location of the corresponding samples file (if it exists and/or several samples are used)",
+	    "group_id": 1,
+	    "position": 5,
+	    "blank_value_on_duplicate": true
+	}
     }
-  }
 }
