@@ -1,0 +1,117 @@
+{
+    "elabftw": {
+        "extra_fields_groups": [
+            {
+                "id": 1,
+                "name": "MODALITY_ecephys"
+            }
+        ]
+    },
+    "extra_fields": {
+
+
+
+        "InstitutionName": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 1,
+            "description": "The name of the institution in charge of the equipment that produced the measurements.",
+            "blank_value_on_duplicate": false
+        },
+        "PowerLineFrequency": {
+            "type": "text",
+            "value": "50",
+            "group_id": 1,
+            "position": 2,
+            "description": "Frequency (in Hz) of the power grid at the geographical location of the instrument (for example, 50 or 60).",
+            "blank_value_on_duplicate": false
+        },
+        "Manufacturer": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 3,
+            "description": "Manufacturer of the equipment that produced the measurements. For example, TDT, Blackrock.",
+            "blank_value_on_duplicate": false
+        },
+        "SamplingFrequency": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 4,
+            "description": "Sampling frequency (in Hz) of all the data in the recording, regardless of their type (for example, 2400).",
+            "blank_value_on_duplicate": false
+        },
+        "RecordingDuration": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 5,
+            "description": "Length of the recording in seconds (for example, 3600).",
+            "blank_value_on_duplicate": false
+        },
+	"RecordingType": {
+            "type": "select",
+            "value": "",
+            "options": [
+		"continuous",
+		"epoched",
+		"discontinuous"
+            ],
+            "group_id": 1,
+            "position": 6,
+            "description": "Type of electrophysiology recording",
+            "allow_multi_values": false,
+            "blank_value_on_duplicate": false
+        },
+        "EpochLength": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 7,
+            "description": "Duration of individual epochs in seconds in case of epoched data",
+            "blank_value_on_duplicate": false
+        },
+        "SoftwareFilters": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 8,
+            "description": "Object of temporal software filters applied, or 'n/a' if the data is not available. Each key-value pair in the JSON object is a name of the filter and an object in which its parameters are defined as key-value pairs (for example,).",
+            "blank_value_on_duplicate": false
+        },
+        "HardwareFilters": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 9,
+            "description": "Object of temporal hardware filters applied, or 'n/a' if the data is not available. Each key-value pair in the JSON object is a name of the filter and an object in which its parameters are defined as key-value pairs (for example,).",
+            "blank_value_on_duplicate": false
+        },
+        "BodyPart": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 10,
+            "description": "Body part of the organ / region scanned (e.g. BRAIN).",
+            "blank_value_on_duplicate": false
+        },
+        "BodyPartDetails": {
+            "type": "text",
+            "value": "",
+            "group_id": 1,
+            "position": 11,
+            "description": "Additional details about body part or location.",
+            "blank_value_on_duplicate": false
+        },
+	"ecephys_datafile_path": {
+	    "type": "text",
+	    "value": "",
+	    "description": "Location of the corresponding data file(s) or directory",
+	    "group_id": 1,
+	    "position": 12,
+	    "blank_value_on_duplicate": true
+	}
+    }
+}
