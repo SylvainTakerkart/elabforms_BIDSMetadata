@@ -13,8 +13,8 @@
             "value": "",
             "group_id": 3,
             "position": 0,
-            "required": true,
-            "description": "The recording session ID, for file names. ONLY numbers, letters and +. Ex: '20251110', '01' or 'predrug+2'"
+            "description": "The recording session ID, for file names. ONLY numbers, letters and +. Ex: '20251110', '01' or 'predrug+2'",
+            "blank_value_on_duplicate": true
         },
         "Session duration": {
             "type": "number",
